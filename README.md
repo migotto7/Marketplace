@@ -5,7 +5,7 @@ A aplicação foi projetada para ser escalável, modular e pronta para integraç
 ## 🚀 Tecnologias
 
 - **Frontend**: [Next.js](https://nextjs.org/) + React + Tailwind CSS + Shadcn/ui
-- **Backend**: [Node.js](https://nodejs.org/) + Express/NestJS
+- **Backend**: [Node.js](https://nodejs.org/) + Express
 - **Banco de Dados**: [PostgreSQL](https://www.postgresql.org/) + Prisma ORM
 - **Autenticação**: JWT + Refresh Tokens
 - **Deploy**: Vercel (frontend) e Railway/Render/AWS (backend)
