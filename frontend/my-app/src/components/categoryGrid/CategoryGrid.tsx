@@ -10,11 +10,11 @@ const categories = [
 export default function CategoryGrid() {
     return (
         <section className="py-12 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-6 text-center">
+            <div className="max-w-7xl mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-10">
                     Explore por categorias
                 </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                     {categories.map((categorie) => (
                         <a
                             key={categorie.name}
@@ -25,9 +25,8 @@ export default function CategoryGrid() {
                                 <Image 
                                     src={categorie.image}
                                     alt={categorie.name}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="group-hover:scale-105 transition-transform"
+                                    fill={true}
+                                    className="group-hover:scale-105 transition-transform object-cover"
                                 />
                             </div>
                             <div className="p-4">

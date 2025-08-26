@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
 
                 {/* Imagem de destaque */}
-                <div className="mt-10 md:mt-0">
+                <div className="mt-10 flex-1 hidden md:mt-0 md:flex justify-end">
                     <Image
                         src="/clothes_hero.jpg"
                         alt="Looma marketplace fashion"
