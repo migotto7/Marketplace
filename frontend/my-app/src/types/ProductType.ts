@@ -1,9 +1,10 @@
-interface Product {
-    id: number,
-    name: string,
-    price: string,
-    image: string,
-    badge?: string
+type Product = {
+    id: string;
+    name: string;
+    price: number;
+    image: string;
+    quantity: number;
+    badge?: string;
 }
 
 export type { Product };

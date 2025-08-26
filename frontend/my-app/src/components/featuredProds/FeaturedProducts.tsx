@@ -1,39 +1,44 @@
-import Image from "next/image"
+"use client"
+
 import ProductCard from "../productCard/ProductCard"
 
 const products = [
     {
-        id: 1,
+        id: "1",
         name: "Camiseta Oversized Looma",
-        price: "R$ 119,90",
+        price: 119.90,
         image: "/products/noctaJkt.webp",
+        quantity: 0,
         badge: "Novo",
     },
     {
-        id: 2,
+        id: "2",
         name: "Camiseta Oversized Looma",
-        price: "R$ 119,90",
+        price: 119.90,
         image: "/products/pietXoakley.webp",
+        quantity: 0,
         badge: "Novo",
     },
     {
-        id: 3,
+        id: "3",
         name: "Camiseta Oversized Looma",
-        price: "R$ 119,90",
+        price: 119.90,
         image: "/products/nikeJkt.webp",
+        quantity: 0,
         badge: "Promoção",
     },
     {
-        id: 4,
+        id: "4",
         name: "Camiseta Oversized Looma",
-        price: "R$ 119,90",
+        price: 119.90,
+        quantity: 0,
         image: "/products/lvJkt.png",
     },
 ]
 
 export default function FeaturedProducts() {
     return (
-        <section className="w-full bg-white">
+        <section className="w-full bg-white my-10">
             <div className="max-w-7xl mx-auto">
                 <div className="bg-[#1F2937] w-full py-4 px-6">
                     <h2 className="text-2xl font-bold text-white">

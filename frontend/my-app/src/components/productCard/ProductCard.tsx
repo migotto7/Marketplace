@@ -1,7 +1,10 @@
 import { Product } from "@/types/ProductType";
 import Image from "next/image";
+import { useCartStore } from "@/lib/store/useCartStore";
 
 export default function ProductCard(prod: Product) {
+    const { addItem } = useCartStore();
+
     return (
         <div
             key={prod.id}
@@ -24,7 +27,10 @@ export default function ProductCard(prod: Product) {
                     {prod.name}
                 </h3>
                 <p className="text-purple-600 font-bold mt-2">{prod.price}</p>
-                <button className="mt-4 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition">
+                <button
+                    onClick={() => addItem(prod)}
+                    className="mt-4 px-4 py-2 rounded-xl bg-purple-600 text-white font-medium hover:bg-purple-700 transition"
+                >
                     Ver produto
                 </button>
             </div>
